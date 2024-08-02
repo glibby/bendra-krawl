@@ -2,7 +2,7 @@ enum: JOB_ABYSSAL_KNIGHT
 name: "Abyssal Knight"
 short_name: AK
 category: Zealot
-category_priority: 110
+category_priority: 70
 str: 5
 int: 2
 dex: 5
