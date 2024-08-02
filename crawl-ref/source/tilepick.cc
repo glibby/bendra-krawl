@@ -3862,11 +3862,9 @@ tileidx_t tileidx_ability(const ability_type ability)
         return TILEG_ABILITY_EXSANGUINATE;
     case ABIL_REVIVIFY:
         return TILEG_ABILITY_REVIVIFY;
-#if TAG_MAJOR_VERSION == 34
     // Deep Dwarves
     case ABIL_HEAL_WOUNDS:
         return TILEG_ABILITY_HEAL_WOUNDS;
-#endif
     // Formicids
     case ABIL_DIG:
         return TILEG_ABILITY_DIG;
@@ -4354,7 +4352,6 @@ static tileidx_t _tileidx_player_species_base(const species_type species)
     {
         case SP_HUMAN:
 #if TAG_MAJOR_VERSION == 34
-        case SP_DEEP_DWARF:
         case SP_HILL_ORC:
 #endif
             return TILEG_SP_HUMAN;
@@ -4395,6 +4392,8 @@ static tileidx_t _tileidx_player_species_base(const species_type species)
             return TILEG_SP_MERFOLK;
         case SP_VAMPIRE:
             return TILEG_SP_VAMPIRE;
+        case SP_DEEP_DWARF:
+            return TILEG_SP_DEEP_DWARF;
         case SP_FELID:
             return TILEG_SP_FELID;
         case SP_OCTOPODE:

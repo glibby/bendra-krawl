@@ -1,11 +1,11 @@
-TAG_MAJOR_VERSION: 34
 enum: SP_DEEP_DWARF
 monster: MONS_DEEP_DWARF
 name: Deep Dwarf
 short_name: DD
 adjective: Dwarven
 genus: Dwarf
-difficulty: False
+difficulty: Intermediate
+difficulty_priority: 20
 aptitudes:
   xp: -1
   hp: 2
@@ -58,6 +58,12 @@ fake_mutations:
     short: damage resistance
   - long: You can heal yourself by infusing magical energy.
     short: heal wounds
+recommended_jobs:
+  - JOB_FIGHTER
+  - JOB_HUNTER
+  - JOB_BERSERKER
+  - JOB_NECROMANCER
+  - JOB_EARTH_ELEMENTALIST
 recommended_weapons:
   - maces and flails
   - axes
