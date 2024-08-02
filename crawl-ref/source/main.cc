@@ -1102,6 +1102,7 @@ static void _input()
             scorefile_entry se(INSTANT_DEATH, MID_NOBODY, KILLED_BY_LEAVING, nullptr);
             out << se.get_score();
             out.close();
+            mprf("The sun explodes signaling the end of the universe. Your score is %d", se.get_score());
         }
     }
 
