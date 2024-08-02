@@ -1,0 +1,22 @@
+enum: JOB_ABYSSAL_KNIGHT
+name: "Abyssal Knight"
+short_name: AK
+category: Zealot
+category_priority: 110
+str: 5
+int: 2
+dex: 5
+equipment:
+  - "leather armour"
+recommended_species:
+  - troll
+  - merfolk
+  - draconian
+  - demonspawn
+skills:
+  fighting: 3
+  armour: 1
+  dodging: 1
+  invocations: 2
+  weapon: 2
+create_enum: false

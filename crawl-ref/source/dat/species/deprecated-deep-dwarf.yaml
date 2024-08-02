@@ -59,11 +59,11 @@ fake_mutations:
   - long: You can heal yourself by infusing magical energy.
     short: heal wounds
 recommended_jobs:
-  - JOB_FIGHTER
-  - JOB_HUNTER
-  - JOB_BERSERKER
-  - JOB_NECROMANCER
-  - JOB_EARTH_ELEMENTALIST
+  - fighter
+  - hunter
+  - berserker
+  - necromancer
+  - earth elementalist
 recommended_weapons:
   - maces and flails
   - axes
