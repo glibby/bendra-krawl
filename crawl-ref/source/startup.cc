@@ -299,7 +299,13 @@ static void _post_init(bool newc)
         you.entering_level = false;
         you.transit_stair = DNGN_UNSEEN;
         you.depth = starting_absdepth() + 1;
-        you.where_are_you = root_branch;
+
+        // Abyssal Knights start out in the Abyss.
+        if (you.chapter == CHAPTER_POCKET_ABYSS)
+            you.where_are_you = BRANCH_ABYSS;
+        else
+            you.where_are_you = root_branch;
+
         if (you.depth > 1)
             set_shafted();
     }
@@ -318,6 +324,12 @@ static void _post_init(bool newc)
                you.entering_level ? LOAD_ENTER_LEVEL :
                newc               ? LOAD_START_GAME : LOAD_RESTART_GAME,
                old_level);
+
+    if (newc && you.chapter == CHAPTER_POCKET_ABYSS)
+    {
+        generate_abyss();
+        save_level(level_id::current());
+    }
 
 #ifdef WIZARD
     // Save-less games are pointless except for tests.

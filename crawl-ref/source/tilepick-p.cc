@@ -659,6 +659,8 @@ tileidx_t tilep_species_to_base_tile(int sp, int level)
         return TILEP_BASE_MERFOLK;
     case SP_VAMPIRE:
         return TILEP_BASE_VAMPIRE;
+    case SP_DEEP_DWARF:
+        return TILEP_BASE_DEEP_DWARF;
     case SP_GARGOYLE:
         return TILEP_BASE_GARGOYLE;
     case SP_FELID:
@@ -766,6 +768,10 @@ void tilep_race_default(int sp, int level, dolls_data *doll)
         case SP_VAMPIRE:
             hair = TILEP_HAIR_ARWEN;
             break;
+        case SP_DEEP_DWARF:
+            hair  = TILEP_HAIR_SHORT_WHITE;
+            beard = TILEP_BEARD_GARIBALDI_WHITE;
+            break;
         case SP_SPRIGGAN:
             hair = 0;
             beard = TILEP_BEARD_MEDIUM_GREEN;
@@ -840,13 +846,11 @@ void tilep_job_default(int job, dolls_data *doll)
             parts[TILEP_PART_HELM]  = TILEP_HELM_CLOWN; // Xom
             break;
 
-#if TAG_MAJOR_VERSION == 34
         case JOB_ABYSSAL_KNIGHT:
             parts[TILEP_PART_BODY]  = TILEP_BODY_SHOULDER_PAD;
             parts[TILEP_PART_LEG]   = TILEP_LEG_METAL_GRAY;
             parts[TILEP_PART_HELM]  = TILEP_HELM_FHELM_PLUME;
             break;
-#endif
 
         case JOB_BERSERKER:
             parts[TILEP_PART_BODY]  = TILEP_BODY_ANIMAL_SKIN;

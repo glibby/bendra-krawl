@@ -826,7 +826,8 @@ void floor_transition(dungeon_feature_type how,
         mark_milestone("abyss.enter", "escaped (hah) into the Abyss!");
         take_note(Note(NOTE_MESSAGE, 0, 0, "Took an exit into the Abyss."), true);
     }
-    else if (how == DNGN_EXIT_ABYSS)
+    else if (how == DNGN_EXIT_ABYSS
+             && you.chapter != CHAPTER_POCKET_ABYSS)
     {
         mark_milestone("abyss.exit", "escaped from the Abyss!");
         you.attribute[ATTR_BANISHMENT_IMMUNITY] = you.elapsed_time + 100
@@ -1264,6 +1265,8 @@ level_id stair_destination(dungeon_feature_type feat, const string &dst,
         return level_id(BRANCH_VESTIBULE);
 
     case DNGN_EXIT_ABYSS:
+        if (you.chapter == CHAPTER_POCKET_ABYSS)
+            return level_id(BRANCH_DUNGEON, 1);
 #if TAG_MAJOR_VERSION == 34
         if (you.char_class == JOB_ABYSSAL_KNIGHT && you.level_stack.empty())
             return level_id(BRANCH_DUNGEON, 1);

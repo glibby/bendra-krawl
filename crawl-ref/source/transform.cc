@@ -690,11 +690,9 @@ public:
      */
     string transform_message(bool was_flying) const override
     {
-#if TAG_MAJOR_VERSION == 34
         if (you.species == SP_DEEP_DWARF && one_chance_in(10))
             return "You inwardly fear your resemblance to a lawn ornament.";
-#endif
-        if (you.species == SP_GARGOYLE)
+        else if (you.species == SP_GARGOYLE)
             return "Your body stiffens and grows slower.";
         return Form::transform_message(was_flying);
     }

@@ -5,6 +5,7 @@
 
 #include "AppHdr.h"
 
+#include <sys/stat.h>
 #include <algorithm>
 #include <cerrno>
 #include <cstdio>
@@ -13,6 +14,7 @@
 #include <ctime>
 #include <iostream>
 #include <list>
+#include <fstream>
 #include <sstream>
 #include <string>
 #include <utility> // pair
@@ -1090,6 +1092,18 @@ static void _input()
 
     // Unhandled things that should have caused death.
     ASSERT(you.hp > 0);
+
+    if (you.real_time() >= 1320) {
+        const string filename = you.your_name + "-" + make_file_time(you.birth_time);
+        const string full_filename = morgue_directory() + strip_filename_unsafe_chars(filename) + ".space";
+        struct stat buffer;
+        if (stat(full_filename.c_str(), &buffer) != 0) {
+            std::ofstream out(full_filename);
+            scorefile_entry se(INSTANT_DEATH, MID_NOBODY, KILLED_BY_LEAVING, nullptr);
+            out << se.get_score();
+            out.close();
+        }
+    }
 
     if (crawl_state.is_replaying_keys() && crawl_state.is_repeating_cmd()
         && kbhit())

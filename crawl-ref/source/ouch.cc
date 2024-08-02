@@ -849,7 +849,6 @@ void reset_damage_counters()
     you.source_damage = 0;
 }
 
-#if TAG_MAJOR_VERSION == 34
 bool can_shave_damage()
 {
     return you.species == SP_DEEP_DWARF || you.species == SP_MAYFLYTAUR;
@@ -867,7 +866,6 @@ int do_shave_damage(int dam)
 
     return dam;
 }
-#endif
 
 /// Let Sigmund crow in triumph.
 static void _triumphant_mons_speech(actor *killer)
@@ -1015,13 +1013,11 @@ void ouch(int dam, kill_method_type death_type, mid_t source, const char *aux,
             dam = dam * 150 / 100;
     }
 
-#if TAG_MAJOR_VERSION == 34
     if (can_shave_damage() && dam != INSTANT_DEATH
         && death_type != KILLED_BY_POISON)
     {
         dam = max(0, do_shave_damage(dam));
     }
-#endif
 
     if (dam != INSTANT_DEATH)
     {
