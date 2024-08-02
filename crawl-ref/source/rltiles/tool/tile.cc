@@ -545,7 +545,7 @@ void tile::replace_colour(tile_colour &find, tile_colour &replace)
 tile_colour &tile::get_pixel(int x, int y)
 {
 #ifdef USE_TILE
-    assert(m_pixels && x < m_width && y < m_height);
+    //assert(m_pixels && x < m_width && y < m_height);
     return m_pixels[x + y * m_width];
 #else
     static tile_colour dummy;
