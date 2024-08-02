@@ -2717,9 +2717,6 @@ static void _tag_read_you(reader &th)
     ASSERT(you.chapter < NUM_CHAPTERS);
 
 #if TAG_MAJOR_VERSION == 34
-    if (th.getMinorVersion() < TAG_MINOR_REMOVE_AK && you.chapter == CHAPTER_POCKET_ABYSS)
-        you.chapter = CHAPTER_ORB_HUNTING;
-
     if (th.getMinorVersion() < TAG_MINOR_ZOT_OPEN)
         unmarshallBoolean(th);
 #endif
