@@ -10,7 +10,7 @@ attacks:
  - {type: hit, flavour: acid, damage: 50}
  - {type: hit, flavour: acid, damage: 30}
 hd: 21
-hp_10x: 2310
+hp_10x: 4620
 ac: 8
 ev: 4
 intelligence: brainless
