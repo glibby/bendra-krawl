@@ -830,3 +830,11 @@ This orb is the work of a master artificer, contracted to retrieve the orb, who
 valued their life more than their professional integrity. While this fake
 faithfully recreates the eerie glow and space-warping properties of the true
 orb, it has no powers but a boost to Evocations.
+%%%%
+energy weapon "BFG-9000"
+
+A massively powerful plasma energy weapon designed to wreak havoc on an
+unprecedented scale when wielded by a maniac with true, pure desire to
+unleash bloodlust the likes of which Zot has never seen. The blinding green
+explosions created by this engine of destruction will never harm the madman
+(or woman) pulling the trigger.

@@ -1845,6 +1845,21 @@ TILE:     urand_scarf_invisibility
 TILE_EQ:  scarf_invisibility
 BOOL:     inv, nogen
 
+ENUM:    BFG
+NAME:    energy weapon "BFG-9000"
+INSCRIP: CARNAGE
+OBJ:     OBJ_WEAPONS/WPN_ARBALEST
+FB_BRAND: SPWPN_FLAMING
+PLUS:    +6
+COLOUR:  LIGHTGREEN
+TILE:    urand_bfg
+TILE_EQ: bfg
+VALUE:   800
+BOOL:    nogen
+DBRAND:  Carnage: Any ammunition fired from it explodes in a burst of
+ unholy, orgasm-inducing, pure fucking violence on striking a foe, dealing 
+ damage which bypasses armour.
+
 # This entry must always be last.
 ENUM:   DUMMY2
 NAME:   DUMMY UNRANDART 2

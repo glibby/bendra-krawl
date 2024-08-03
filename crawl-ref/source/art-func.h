@@ -1850,3 +1850,19 @@ static void _CHARLATANS_ORB_unequip(item_def */*item*/, bool */*show_msgs*/)
 {
     invalidate_agrid(true);
 }
+
+static void _BFG_launch(bolt* beam)
+{
+
+    beam->name    = "BFG missile";
+    beam->colour  = LIGHTGREEN;
+    beam->glyph   = DCHAR_FIRED_ZAP;
+
+    bolt *expl   = new bolt(*beam);
+    expl->flavour = BEAM_DAMNATION;
+    expl->is_explosion = true;
+    expl->damage = dice_def(2, 14);
+    expl->name   = "carnage";
+
+    beam->special_explosion = expl;
+}

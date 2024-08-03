@@ -1219,6 +1219,11 @@ int make_mons_weapon(monster_type type, int level, bool melee_only)
         make_item_unrandart(item, UNRAND_CEREBOV);
         break;
 
+    case MONS_DOOM_SLAYER:
+	force_item = true;
+	make_item_unrandart(item, UNRAND_BFG);
+	break;
+
     case MONS_ASMODEUS:
         force_item = true;
         make_item_unrandart(item, UNRAND_ASMODEUS);
@@ -2168,6 +2173,15 @@ int make_mons_armour(monster_type type, int level)
     case MONS_ENCHANTRESS:
         force_item = true;
         make_item_unrandart(item, UNRAND_FAERIE);
+        break;
+
+    case MONS_DOOM_SLAYER:
+        if (one_chance_in(3))
+            level = ISPEC_GOOD_ITEM;
+        item.base_type = OBJ_ARMOUR;
+        item.sub_type = random_choose_weighted(10, ARM_CHAIN_MAIL,
+                                               9, ARM_PLATE_ARMOUR,
+                                               1, ARM_CRYSTAL_PLATE_ARMOUR);
         break;
 
     case MONS_TIAMAT:
