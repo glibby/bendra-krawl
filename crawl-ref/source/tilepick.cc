@@ -4353,8 +4353,8 @@ static tileidx_t _tileidx_player_species_base(const species_type species)
     switch (species)
     {
         case SP_HUMAN:
-#if TAG_MAJOR_VERSION == 34
         case SP_HILL_ORC:
+#if TAG_MAJOR_VERSION == 34
 #endif
             return TILEG_SP_HUMAN;
         case SP_MOUNTAIN_DWARF:

@@ -1,9 +1,9 @@
-TAG_MAJOR_VERSION: 34
 enum: SP_HILL_ORC
 monster: MONS_ORC
 name: Hill Orc
 short_name: HO
-difficulty: False
+genus: Orc
+difficulty: Simple
 difficulty_priority: 100
 aptitudes:
   xp: 0
@@ -37,5 +37,12 @@ dex: 6
 levelup_stat_frequency: 5
 levelup_stats:
   - str
+recommended_jobs:
+  - berserker
+  - monk
+  - fighter
+  - fire elementalist
+  - abyssal knight
+  - cinder acolyte
 
 orc_name: Antique Orc
