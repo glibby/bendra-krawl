@@ -318,6 +318,10 @@ DEPTH:  Depths
 MONS:   the Enchantress band
 : place_unique(_G, "the Enchantress band")
 
+NAME:   uniq_doomslayer
+DEPTH:  Zot:1-4, Crypt, Pan
+: place_unique(_G, "Doom Slayer")
+
 NAME:   uniq_frederick
 DEPTH:  Depths:3-, Vaults:2-, Crypt
 : place_unique(_G, "Frederick")

@@ -1,0 +1,19 @@
+name: "Doom Slayer"
+glyph: {char: "D", colour: green}
+flags: [speaks, warm_blood, unique, archer, male]
+xp_mult: 18
+species: demigod
+will: 100
+attacks:
+ - {type: hit, damage: 30}
+hd: 23
+hp_10x: 1600
+ac: 0
+ev: 16
+has_corpse: true
+shout: shout
+intelligence: human
+speed: 10
+uses: weapons_armour
+size: medium
+shape: humanoid

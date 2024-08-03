@@ -882,6 +882,7 @@ enum monster_type                      // env.mons[].type
     MONS_XTAHUA,
     MONS_NORRIS,
     MONS_FREDERICK,
+    MONS_DOOM_SLAYER,
     MONS_MARGERY,
     MONS_BORIS,
     MONS_POLYPHEMUS,

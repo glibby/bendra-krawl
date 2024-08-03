@@ -380,3 +380,9 @@ Polyphemus
 # This would also work for other monsters that are surrounded by allies.
 SOUND:@The_monster@ shouts, "Attack, my pets! Attack!"
 %%%%
+
+%%%%
+Doom Slayer
+
+VISUAL:@The_monster@ locks his bloodshot coomer eyes onto you.
+%%%%

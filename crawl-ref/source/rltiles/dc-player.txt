@@ -578,6 +578,7 @@ punk PUNK
 sniper SNIPER
 crossbow_fire FIERY_DEVIL
 condemnation CONDEMNATION
+bfg BFG
 zephyr ZEPHYR
 mule MULE
 sceptre_of_torment SCEPTRE_OF_TORMENT

@@ -634,6 +634,7 @@ frostbound_tome MONS_FROSTBOUND_TOME
 %sdir mon/unique
 # Unique humans, in alphabetical order
 donald MONS_DONALD
+doomslayer MONS_DOOM_SLAYER
 edmund MONS_EDMUND
 edmund_weaponless MONS_EDMUND_WEAPONLESS
 eustachio MONS_EUSTACHIO

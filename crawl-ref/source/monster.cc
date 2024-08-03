@@ -1420,6 +1420,9 @@ static bool _is_signature_weapon(const monster* mons, const item_def &weapon)
 
         case UNRAND_CEREBOV:
             return mons->type == MONS_CEREBOV;
+
+	case UNRAND_BFG:
+	    return mons->type == MONS_DOOM_SLAYER;
         }
     }
 

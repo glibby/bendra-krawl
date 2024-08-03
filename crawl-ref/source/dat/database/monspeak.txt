@@ -4364,6 +4364,21 @@ w:1
 
 @The_monster@ says, "I will defeat you, of this I have no doubt!" @player_only@
 %%%%
+############ DOOM SLAYER # AN EXTREMELY BASED DICK KICKER
+Doom Slayer
+
+@_DoomSlayer_common_@
+%%%%
+_DoomSlayer_common_
+
+VISUAL:@The_monster@ shakes with bloodlust.
+
+VISUAL:@The_monster@ fingers the trigger of his BIG FUCKING GUN.
+
+@The_monster@ shouts, "RIP AND TEAR 'TIL THE JOB IS DONE"
+
+@The_monster@ shouts, "AHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH"
+%%%%
 ############ FREDERICK ### An extremely smug (& powerful) demigod
 Frederick
 

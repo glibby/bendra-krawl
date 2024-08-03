@@ -139,6 +139,13 @@ A beautiful but vain deep elf with an aptitude for magic and little else. His
 skills are the perfect complement of his twin sister Duvessa's fighting prowess.
 In search of more powerful spells, he journeys to the surface with his sister.
 %%%%
+Doom Slayer
+
+A mountain of flesh wrapped in a green combat suit, the Doom Slayer's bloodshot eyes
+expose a religious dedication to slaughtering anything in his way. His exposed arms 
+ripple with bulging muscle, and his trigger finger is twitching against the firing mechanism
+of the BIG FUCKING GUN he holds at the ready.
+%%%%
 Duvessa
 
 A plain-looking deep elven fighter who is technically brilliant in many forms of
