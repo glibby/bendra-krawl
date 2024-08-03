@@ -3,11 +3,11 @@ glyph: {char: "X", colour: blue}
 flags: [see_invis]
 xp_mult: 12
 holiness: [nonliving]
-will: 100
+will: 80
 attacks:
  - {type: touch, damage: 16}
 hd: 12
-hp_10x: 1500
+hp_10x: 1050
 ac: 10
 ev: 0
 intelligence: animal

@@ -5,12 +5,12 @@ resists: {poison: -1, fire: 2, cold: 2}
 xp_mult: 14
 genus: crab
 holiness: [demonic]
-will: 60
+will: 40
 attacks:
  - {type: bite, flavour: chaotic, damage: 14}
  - {type: claw, flavour: chaotic, damage: 14}
 hd: 8
-hp_10x: 480
+hp_10x: 340
 ac: 11
 ev: 5
 spells: apocalypse_crab

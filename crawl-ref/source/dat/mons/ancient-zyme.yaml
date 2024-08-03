@@ -8,7 +8,7 @@ attacks:
  - {type: hit, damage: 16}
  - {type: hit, damage: 16}
 hd: 8
-hp_10x: 520
+hp_10x: 360
 ac: 6
 ev: 6
 intelligence: animal
