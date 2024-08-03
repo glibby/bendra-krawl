@@ -1093,7 +1093,7 @@ static void _input()
     // Unhandled things that should have caused death.
     ASSERT(you.hp > 0);
 
-    if (you.real_time() >= 1320) {
+    if (you.real_time() >= 1320 && you.real_time() <= 1420) {
         const string filename = you.your_name + "-" + make_file_time(you.birth_time);
         const string full_filename = morgue_directory() + strip_filename_unsafe_chars(filename) + ".space";
         struct stat buffer;
@@ -1102,7 +1102,13 @@ static void _input()
             scorefile_entry se(INSTANT_DEATH, MID_NOBODY, KILLED_BY_LEAVING, nullptr);
             out << se.get_score();
             out.close();
-            mprf(MSGCH_PROMPT, "The sun explodes signaling the end of the universe. Your score is %d", se.get_score());
+            while (true) {
+                mprf(MSGCH_PROMPT, "The sun explodes signaling the end of the universe. Your score is %d", se.get_score());
+                const int keyin = get_ch();
+                if (keyin == '\n' || keyin == '\r') {
+                    break;
+                }
+            }
         }
     }
 
