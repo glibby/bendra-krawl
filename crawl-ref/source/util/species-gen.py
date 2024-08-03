@@ -310,8 +310,6 @@ def generate_aptitudes_data(s, template):
             continue
         if val is False:
             aptitudes[apt] = 'UNUSABLE_SKILL'
-        elif apt == 'long_blades':
-            aptitudes[apt] = val + 1
         else:
             aptitudes[apt] = val
     if aptitudes['long_blades'] != 'UNUSABLE_SKILL':
